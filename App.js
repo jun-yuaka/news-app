@@ -1,23 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, View, Text } from 'react-native';
+import { ListItem } from './components/ListItem'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.itemContainer}>
-        <View style={styles.leftContainer}>
-          <Image
-            style={{ width: 100, height: 100 }}
-            source={{ uri: 'https://picsum.photos/id/237/200/300' }}
-          />
-        </View>
-        <View style={styles.rightContainer}>
-          <Text numberOfLines={3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, massa quis varius auctor, nisl odio faucibus lectus, quis aliquet eros metus a nunc.
-          </Text>
-          <Text style={styles.subText}>ReactNews</Text>
-        </View>
-      </View>
+      <ListItem />
+      <ListItem />
+      <ListItem />
+      <ListItem />
       <StatusBar style="auto" />
     </View>
   );
