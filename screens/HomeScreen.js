@@ -32,7 +32,9 @@ export const HomeScreen = ({ navigation }) => {
             title={item.title}
             author={item.author}
             onPress={() => {
-              navigation.navigate("Article")
+              navigation.navigate("Article", {
+                article: item
+              })
             }}
           />
         )}
